@@ -17,5 +17,12 @@ Beyond the basic simulation, I conducted a frequency-current (f-I) analysis to u
   Signal Processing: I used the findpeaks function to accurately detect action potentials and calculate the firing rate (Spikes per Second).
   Interpreting the f-I Curve: When testing inputs from 10 to 600 pA, I noticed specific "plateaus" in the resulting curve where the spike count remains identical     despite increasing the current.
   The "Why": These plateaus indicate that the 20 pA increments were sometimes insufficient to reach the firing threshold for an additional spike within the set simulation duration. This observation highlights the non-linear dynamics of the model and the importance of step-size in biological simulations.
-  <img width="517" height="343" alt="image" src="https://github.com/user-attachments/assets/e2106fc2-89ad-4710-a6f6-9aa8ded83e67" />
-  <img width="519" height="340" alt="image" src="https://github.com/user-attachments/assets/0f22b7a2-b449-443b-896f-02d18a6fadcd" />
+
+<img width="517" height="343" alt="Στιγμιότυπο οθόνης 2026-02-21 162303" src="https://github.com/user-attachments/assets/6ab6d685-a30d-41b9-9637-c874a3190e11" />
+<img width="519" height="340" alt="Στιγμιότυπο οθόνης 2026-02-21 162314" src="https://github.com/user-attachments/assets/d1cb9889-d14d-431d-837e-17ef88e15749" />
+
+Repository Structure
+
+simulateAdEx.mlx: Core function implementing the AdEx dynamics.
+
+final_Kleitsiotis_155.mlx: Main script for parameter initialization, data visualization, and frequency analysis.
